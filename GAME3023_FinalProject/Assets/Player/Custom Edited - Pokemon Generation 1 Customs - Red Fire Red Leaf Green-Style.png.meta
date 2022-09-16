@@ -1,0 +1,1306 @@
+fileFormatVersion: 2
+guid: 8e7c49fff9d476e4089ce38663ab7828
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 904077458537934152
+    second: TrainerRed
+  - first:
+      213: -4769248472328179937
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_1
+  - first:
+      213: 4537411883955800156
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_2
+  - first:
+      213: -1055105276199988112
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_3
+  - first:
+      213: 8646078540388735920
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_4
+  - first:
+      213: -4188377126624951073
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_5
+  - first:
+      213: 728139499706016948
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_6
+  - first:
+      213: 2514071348810769503
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_7
+  - first:
+      213: -7684568632068514177
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_8
+  - first:
+      213: 6292022845706892628
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_9
+  - first:
+      213: -4801243387404837031
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_10
+  - first:
+      213: 2544866657789722870
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_11
+  - first:
+      213: -8021623017677840906
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_12
+  - first:
+      213: 4919727602602462931
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_13
+  - first:
+      213: -1433093744885729484
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_14
+  - first:
+      213: -371982803021966223
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_15
+  - first:
+      213: 5843383823857370119
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_16
+  - first:
+      213: -4156875114931384382
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_17
+  - first:
+      213: 1299606511103892822
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_18
+  - first:
+      213: 9138750599089612919
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_19
+  - first:
+      213: 3770328995241169968
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_20
+  - first:
+      213: -4693718576174636139
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_21
+  - first:
+      213: -8637316449646512334
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_22
+  - first:
+      213: 6439302803693415466
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_23
+  - first:
+      213: -2313994907497763096
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_24
+  - first:
+      213: 4032145487935183683
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_25
+  - first:
+      213: -174742284625926895
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_26
+  - first:
+      213: -6638752212683701458
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_27
+  - first:
+      213: -7050030792731933674
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_28
+  - first:
+      213: -648798439837631547
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_29
+  - first:
+      213: -8298060119499993983
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_30
+  - first:
+      213: 944749351986227365
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_31
+  - first:
+      213: -8742063507002994809
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_32
+  - first:
+      213: 2755091713813196297
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_33
+  - first:
+      213: 6673124946969731559
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_34
+  - first:
+      213: -5923327841068801294
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_35
+  - first:
+      213: 8720766734970281629
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_36
+  - first:
+      213: -3968258664709704555
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_37
+  - first:
+      213: -320277546539393559
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_38
+  - first:
+      213: 6966655945677373071
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_39
+  - first:
+      213: 7019382351325703788
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_40
+  - first:
+      213: 988082107872508231
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_41
+  - first:
+      213: 640208337325567617
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_42
+  - first:
+      213: 6574732845956136027
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_43
+  - first:
+      213: 4841270443462868271
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_44
+  - first:
+      213: -5180129572570511009
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_45
+  - first:
+      213: 5035336450856859031
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_46
+  - first:
+      213: -2727348265789765538
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_47
+  - first:
+      213: -7809761771896276026
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_48
+  - first:
+      213: 6413911561613220088
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_49
+  - first:
+      213: -4100747163981075159
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_50
+  - first:
+      213: -7366154806992393992
+    second: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_51
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TrainerRed
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 93
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d679598adeb8c00800000000000000
+      internalID: 904077458537934152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 93
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1fed4178c930ddb0800000000000000
+      internalID: -4769248472328179937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 93
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5842d6711028fe30800000000000000
+      internalID: 4537411883955800156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 93
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074957b67538b51f0800000000000000
+      internalID: -1055105276199988112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_4
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 93
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb9ff3af9a0df770800000000000000
+      internalID: 8646078540388735920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 93
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd4062eb135efd5c0800000000000000
+      internalID: -4188377126624951073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_6
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 93
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b468e2640fda1a00800000000000000
+      internalID: 728139499706016948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_7
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 93
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f546ad55296c3e220800000000000000
+      internalID: 2514071348810769503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_8
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 93
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7e52713b8dea5590800000000000000
+      internalID: -7684568632068514177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_9
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 93
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455700d0171c15750800000000000000
+      internalID: 6292022845706892628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_10
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 93
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95f9a85c39e8e5db0800000000000000
+      internalID: -4801243387404837031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_11
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 93
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0ca42fdbe215320800000000000000
+      internalID: 2544866657789722870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_12
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 62
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd1735ad587da090800000000000000
+      internalID: -8021623017677840906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_13
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 62
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3decdc05032664440800000000000000
+      internalID: 4919727602602462931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_14
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 62
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4377046f4d0ac1ce0800000000000000
+      internalID: -1433093744885729484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 62
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 174525b8c9376daf0800000000000000
+      internalID: -371982803021966223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_16
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 62
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7044843d0aed71150800000000000000
+      internalID: 5843383823857370119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 62
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf8ad66b10df46c0800000000000000
+      internalID: -4156875114931384382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_18
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 62
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65dd12a7c31290210800000000000000
+      internalID: 1299606511103892822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_19
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 62
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 778ef9d204d53de70800000000000000
+      internalID: 9138750599089612919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_20
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 62
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03494bfbe36e25430800000000000000
+      internalID: 3770328995241169968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 62
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5936577c2df8cdeb0800000000000000
+      internalID: -4693718576174636139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_22
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 62
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2377e269376122880800000000000000
+      internalID: -8637316449646512334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_23
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 62
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ca25778cffc5950800000000000000
+      internalID: 6439302803693415466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_24
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 31
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee688644e903efd0800000000000000
+      internalID: -2313994907497763096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_25
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 31
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b121345fe05f730800000000000000
+      internalID: 4032145487935183683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_26
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 31
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115a1a561d0339df0800000000000000
+      internalID: -174742284625926895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 31
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e234623490a6ed3a0800000000000000
+      internalID: -6638752212683701458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_28
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 31
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614c5afb852492e90800000000000000
+      internalID: -7050030792731933674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_29
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 31
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb76a6a1410ff6f0800000000000000
+      internalID: -648798439837631547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_30
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 31
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18c0e5c494e57dc80800000000000000
+      internalID: -8298060119499993983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_31
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 31
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a86be6b78c6c1d00800000000000000
+      internalID: 944749351986227365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_32
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 31
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f4e2dce83fda680800000000000000
+      internalID: -8742063507002994809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_33
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 31
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e257d015d0c3620800000000000000
+      internalID: 2755091713813196297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_34
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 31
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1ade598c3bb9c50800000000000000
+      internalID: 6673124946969731559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_35
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 31
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2a9e036bc1ccda0800000000000000
+      internalID: -5923327841068801294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_36
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e52fe0423660970800000000000000
+      internalID: 8720766734970281629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_37
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 594bc19e4c9ede8c0800000000000000
+      internalID: -3968258664709704555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_38
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ed5cf0b4452e8bf0800000000000000
+      internalID: -320277546539393559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_39
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8e7672fba88ea060800000000000000
+      internalID: 6966655945677373071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_40
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e2a69ee0bd96160800000000000000
+      internalID: 7019382351325703788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_41
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 749f8a8217f56bd00800000000000000
+      internalID: 988082107872508231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_42
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ea880471a72e800800000000000000
+      internalID: 640208337325567617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_43
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5cfe4060b42e3b50800000000000000
+      internalID: 6574732845956136027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_44
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2db33471d5af2340800000000000000
+      internalID: 4841270443462868271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_45
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f594078699b7c18b0800000000000000
+      internalID: -5180129572570511009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_46
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79536edd2db11e540800000000000000
+      internalID: 5035336450856859031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Pokemon Generation 1 Customs - Red Fire Red Leaf Green-Style_47
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e58c2dec333862ad0800000000000000
+      internalID: -2727348265789765538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
