@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField]
+    Rigidbody2D rigBod;
+
+    [SerializeField]
+    [Range(0, 10)]
     private float MoveSpeed = 2.0f;
     public Animator animator;
 
@@ -41,9 +46,22 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
-        
-        transform.position += new Vector3(movement.x, movement.y, 0) * MoveSpeed * Time.deltaTime;
+
+        // transform.position += new Vector3(movement.x, movement.y, 0) * MoveSpeed * Time.deltaTime;
+
+        Vector3 currentPosition = transform.position;
+
+        rigBod.MovePosition(currentPosition + new Vector3(movement.x, movement.y, 0) * MoveSpeed * Time.deltaTime);
     }
 
-    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Player collided with: " + collision.gameObject.name);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("Player triggered with: " + collision.gameObject.name);
+
+    }
 }
