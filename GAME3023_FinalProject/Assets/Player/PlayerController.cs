@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField]
     [Range(0, 10)]
-    private float MoveSpeed = 2.0f;
+    private float MoveSpeed = 10.0f;
     public Animator animator;
 
     Vector3 movement;
@@ -47,11 +47,11 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
 
-        // transform.position += new Vector3(movement.x, movement.y, 0) * MoveSpeed * Time.deltaTime;
+        transform.position += new Vector3(movement.x, movement.y, 0) * MoveSpeed * Time.deltaTime;
 
         Vector3 currentPosition = transform.position;
 
-        rigBod.MovePosition(currentPosition + new Vector3(movement.x, movement.y, 0) * MoveSpeed * Time.deltaTime);
+        //rigBod.MovePosition(currentPosition + new Vector3(movement.x, movement.y, 0) * MoveSpeed * Time.deltaTime);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

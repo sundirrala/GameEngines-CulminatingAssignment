@@ -171,7 +171,7 @@ TextureImporter:
       213: -7021359003871896233
     second: TrainerRed_55
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -188,10 +188,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -201,8 +203,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -223,11 +225,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -279,6 +285,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1226,9 +1244,53 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      TrainerRed_27: -2520565991902193921
+      TrainerRed_42: 5019035018848234566
+      TrainerRed_19: -8795269358148022356
+      TrainerRed_47: -3296259293511424961
+      TrainerRed_9: -4741852362247298678
+      TrainerRed_40: -4619245376976190953
+      TrainerRed_26: 4605717841178940853
+      TrainerRed_41: -3325314975607102553
+      TrainerRed_10: 3457860070097347372
+      TrainerRed_6: 248309883613509270
+      TrainerRed_39: -8417281443251392626
+      TrainerRed_36: -8195652024751343407
+      TrainerRed_44: 1928457806986446428
+      TrainerRed_51: -3444368292237932695
+      TrainerRed_34: -2012283758618742369
+      TrainerRed_12: 2359319549186425437
+      TrainerRed_4: -4704486316661546510
+      TrainerRed_28: -8223597166541088022
+      TrainerRed_37: 6473296906991293077
+      TrainerRed_14: 647541259848670836
+      TrainerRed_22: 1928694301902267550
+      TrainerRed_30: 5953290860496216128
+      TrainerRed_29: 9031584848538889044
+      TrainerRed_5: -174008446741560823
+      TrainerRed_48: 9059313917579290037
+      TrainerRed_7: 1732371414797468916
+      TrainerRed_11: -3196824588789792032
+      TrainerRed_15: 4321761086612448887
+      TrainerRed_23: 5351074609807205986
+      TrainerRed_38: 982168948206445915
+      TrainerRed_52: 9196362497229754767
+      TrainerRed_21: 3448087626736260523
+      TrainerRed_8: 4634852514148814454
+      TrainerRed_20: -3886434959538873735
+      TrainerRed_35: -3135901141941977519
+      TrainerRed_24: -5687697240682567953
+      TrainerRed_49: -294071320847188004
+      TrainerRed_25: -4779231400629626986
+      TrainerRed_54: 2897930632792429111
+      TrainerRed_55: -7021359003871896233
+      TrainerRed_50: 1728075271439703297
+      TrainerRed_53: -3634397512447055833
+      TrainerRed_43: -6566869730814268835
+      TrainerRed_13: -1664354585584484748
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

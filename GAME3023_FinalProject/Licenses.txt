@@ -11,8 +11,14 @@ UI by Buch - https://opengameart.org/content/golden-ui
 -------------------------------------------------
 Player Sprite Sheet: https://www.spriters-resource.com/custom_edited/pokemongeneration1customs/sheet/55665/
 
-Pokemon Sprite Sheet: https://www.spriters-resource.com/game_boy_advance/pokemonemerald/sheet/21230/
+Pokemon Sprite Sheet(Front): https://www.spriters-resource.com/game_boy_advance/pokemonemerald/sheet/21230/
+
+Pokemon Sprite Sheet(Back): https://www.spriters-resource.com/game_boy_advance/pokemonfireredleafgreen/sheet/3713/
+
+Pokemon Battle Backgrounds Sheet: https://www.spriters-resource.com/ds_dsi/pokemonplatinum/sheet/18502/
 
 Ressources for creating parts of the project:
 Player Animation: https://www.youtube.com/watch?v=whzomFgjT50&t=903s
 (Used for help w blend tree)
+
+Battle System UI: https://www.youtube.com/watch?v=zKRMkD28-xY (Used to make background and UI look like pokemon game)
