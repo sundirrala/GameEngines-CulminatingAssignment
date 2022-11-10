@@ -6,16 +6,17 @@ TagManager:
   tags:
   - Forest
   - WorldMap
+  - City
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Portal
   - Water
   - UI
+  - EditorOnly
   - 
   - 
-  - Portal
   - 
   - 
   - 
@@ -40,6 +41,24 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Skybox
+    uniqueID: 4282224779
+    locked: 0
+  - name: Background
+    uniqueID: 896638087
+    locked: 0
+  - name: Ground
+    uniqueID: 3036376217
+    locked: 0
+  - name: OnGround
+    uniqueID: 2429654063
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Foreground
+    uniqueID: 1962106545
+    locked: 0
+  - name: Sky
+    uniqueID: 1647249687
     locked: 0

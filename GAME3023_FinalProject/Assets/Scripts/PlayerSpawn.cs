@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class PlayerSpawn : MonoBehaviour
 {
+    /// <summary>
+    ///  This is the prefab of the player character we will use to spawn the original
+    /// </summary>
     [SerializeField]
     private GameObject playerPrefab;
 
-    private static PlayerController player;
-
+    private static PlayerController player = null;
+    /// <summary>
+    /// Access to the Original Player
+    /// </summary>
     public static PlayerController Player
     {
         get { return player; }
