@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 402742690}
   - component: {fileID: 402742692}
   - component: {fileID: 402742691}
+  - component: {fileID: 402742693}
   m_Layer: 5
   m_Name: HPBar
   m_TagString: Untagged
@@ -202,6 +203,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402742689}
   m_CullTransparentMesh: 1
+--- !u!114 &402742693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402742689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feac5ddf78cd22c4fafbce9a388738ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &452008377
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,7 +522,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 21.91, y: 0}
+  m_AnchoredPosition: {x: 21.910004, y: 0}
   m_SizeDelta: {x: -24.89, y: 18.79}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &483111768
@@ -750,7 +763,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1202399222
 GameObject:
@@ -911,7 +924,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1224480705}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1320103965}
+        m_TargetAssemblyTypeName: BattleSceneButtons, Assembly-CSharp
+        m_MethodName: Run
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1224480705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1112,7 +1137,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1298005101}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1320103965}
+        m_TargetAssemblyTypeName: BattleSceneButtons, Assembly-CSharp
+        m_MethodName: Fight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1298005101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1151,6 +1188,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1298005098}
   m_CullTransparentMesh: 1
+--- !u!1 &1320103964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1320103966}
+  - component: {fileID: 1320103965}
+  m_Layer: 0
+  m_Name: BattleSystemManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1320103965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320103964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a8afb1e917ddde41a7fad4f6f9913d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1320103966
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320103964}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.058257, y: 7.3857374, z: 0.033647336}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1434832942
 GameObject:
   m_ObjectHideFlags: 0
@@ -1402,7 +1483,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -22.1, y: -82.792}
+  m_AnchoredPosition: {x: -22.099998, y: -82.792}
   m_SizeDelta: {x: 54.77, y: 21.57}
   m_Pivot: {x: 0.74341303, y: -2.5534098}
 --- !u!114 &1560903990
@@ -1537,8 +1618,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.79, y: 51.22999}
-  m_SizeDelta: {x: 801.96, y: 485.4}
+  m_AnchoredPosition: {x: 0, y: 55.797}
+  m_SizeDelta: {x: 801.96, y: 494.54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1706503623
 MonoBehaviour:
@@ -1673,7 +1754,7 @@ RectTransform:
   m_Children:
   - {fileID: 2064329217}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1715,7 +1796,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 9.464992, y: 0}
+  m_AnchoredPosition: {x: 9.464989, y: 0}
   m_SizeDelta: {x: -24.89, y: 18.79}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1829194570
@@ -1838,7 +1919,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2064329216
 GameObject:
