@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Pokemon", menuName = "Pokemon/New Pokemon")]
 public class PokemonSO : ScriptableObject
 {
+    [SerializeField]
     public Sprite FrontSide, BackSide;
     [SerializeField]
     public string name = "";
@@ -13,6 +14,8 @@ public class PokemonSO : ScriptableObject
     [SerializeField]
     public int maxHealth, attack, defense, speed;
 
+    [SerializeField]
+    public List<MovesSO> moves;
 
     //Using these to be able to get the properties of a pokemon easily
     public string Name
@@ -43,6 +46,8 @@ public class PokemonSO : ScriptableObject
     {
         get { return speed; }
     }
+
+
 }
 
 public enum PokemonType

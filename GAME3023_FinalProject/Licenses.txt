@@ -18,7 +18,19 @@ Pokemon Sprite Sheet(Back): https://www.spriters-resource.com/game_boy_advance/p
 Pokemon Battle Backgrounds Sheet: https://www.spriters-resource.com/ds_dsi/pokemonplatinum/sheet/18502/
 
 Ressources for creating parts of the project:
+List Of Pokemon Types:https://pokemon.fandom.com/wiki/Types
+
+Pokemon Base Stats for the scriptable objects:https://bulbapedia.bulbagarden.net/wiki/List_of_Pokémon_by_base_stats_(Generation_I)
+
+Move Stats: https://pokemondb.net/move/generation/1
+
 Player Animation: https://www.youtube.com/watch?v=whzomFgjT50&t=903s
 (Used for help w blend tree)
 
-Battle System UI: https://www.youtube.com/watch?v=zKRMkD28-xY (Used to make background and UI look like pokemon game)
+For the idea of having both moves and pokemon as scriptable objects and classes(I had the idea prior to finding the video but was unsure of how I would go about it):
+Pokemon: https://www.youtube.com/watch?
+v=x8B_eXfcj6U&list=PLLf84Zj7U26kfPQ00JVI2nIoozuPkykDX&index=5
+AND
+Moves:https://www.youtube.com/watch?v=h3EZ9G0Gtx0&list=PLLf84Zj7U26kfPQ00JVI2nIoozuPkykDX&index=6
+
+Battle System UI: https://www.youtube.com/watch?v=zKRMkD28-xY (Used to make background and UI look like pokemon game as well as the script for the ui)

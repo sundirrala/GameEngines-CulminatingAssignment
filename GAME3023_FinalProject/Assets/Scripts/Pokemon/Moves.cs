@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class Moves : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public MovesSO Base { get; set; }
 
-    // Update is called once per frame
-    void Update()
+    public Moves(MovesSO move)
     {
-        
+        Base = move;
     }
 }

@@ -1,16 +1,44 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class BattleSceneButtons : MonoBehaviour
+public class BattleSceneButtons : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    public void Fight()
+    [SerializeField]
+    DialogOptions DialogOptions;
+    [SerializeField]
+    TMP_Text  NameText, DamageText, UseText, TypeText;
+    Moves move;
+
+    private void Start()
     {
-        Debug.Log("Fight Button Bressed");
+        this.GetComponent<Button>().onClick.AddListener(UpdateMove);
     }
 
-    public void Run()
+    public void SetMove(Moves moves)
     {
-        Debug.Log("Run Button Pressed");
+        move = moves;
+    }
+
+    void UpdateMove()
+    {
+        Debug.Log("Move " + this.GetComponentInChildren<TMP_Text>() +" was used.");
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        DamageText.SetText("Damage: " + DialogOptions.damage);
+        TypeText.SetText("Type: " + DialogOptions.type);
+        UseText.SetText("Uses: " + DialogOptions.uses);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        DamageText.SetText("--");
+        TypeText.SetText("--");
+        UseText.SetText("--");
     }
 }

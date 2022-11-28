@@ -15,9 +15,13 @@ MonoBehaviour:
   FrontSide: {fileID: -1412680944, guid: f65fc870da546054abcf18fd2f8498d6, type: 3}
   BackSide: {fileID: -953970186, guid: 54f84249edcb54340a402b48940a5e33, type: 3}
   name: Pikachu
-  Type1: 4
-  Type2: 0
-  MaxHealth: 35
-  Attack: 55
-  Defense: 30
-  Speed: 90
+  type1: 5
+  type2: 0
+  maxHealth: 35
+  attack: 55
+  defense: 30
+  speed: 90
+  moves:
+  - {fileID: 11400000, guid: 8e9ac58bcb4389e4a8f09171123f32c5, type: 2}
+  - {fileID: 11400000, guid: 4699b61e042d8ea4f82944219722de11, type: 2}
+  - {fileID: 11400000, guid: e17c11f779040a643899df5ef5aabb70, type: 2}

@@ -15,7 +15,7 @@ public class MovesSO : ScriptableObject
     public bool IsPriorityMove;
 
     [SerializeField]
-    PokemonType Type;
+    public PokemonType Type;
 
     public IEffects Effects;
     public Target Target;
