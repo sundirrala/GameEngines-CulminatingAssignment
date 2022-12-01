@@ -150,7 +150,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 18
+  controlID: 120
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 19
+  controlID: 29
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -295,8 +295,8 @@ MonoBehaviour:
     y: 505
     width: 997
     height: 442
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -397,7 +397,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -18570
+  m_LastSelectedObjectID: 21288
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -429,9 +429,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 6a110000
+      m_SelectedIDs: c0530000
       m_LastClickedID: 0
-      m_ExpandedIDs: 24fbffff14530000265300004653000068530000
+      m_ExpandedIDs: 0efbffff46530000785300009a530000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -537,22 +537,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Pokemon
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Pokemon
   m_LastFoldersGridSize: -1
   m_LastProjectPath: A:\School\Game Engines 3\GameEngines-CulminatingAssignment\GAME3023_FinalProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 48540000
-    m_LastClickedID: 21576
-    m_ExpandedIDs: 00000000345400004854000000ca9a3b
+    m_SelectedIDs: 66540000
+    m_LastClickedID: 21606
+    m_ExpandedIDs: 00000000585400006c5400006e54000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -580,7 +580,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000034540000
+    m_ExpandedIDs: 0000000058540000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -608,7 +608,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: 407b0000587d0000487b00008c7e000010630000f252000008530000a8530000
+    m_ExpandedInstanceIDs: 407b0000587d0000487b00008c7e000010630000f252000008530000a8530000d0530000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1026,9 +1026,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.8154197, y: 0.4677187, z: 393.96698}
+    m_Target: {x: -1.3331547, y: -0.44271195, z: 540.96674}
     speed: 2
-    m_Value: {x: 0.8154197, y: 0.4677187, z: 393.96698}
+    m_Value: {x: -1.3331547, y: -0.44271195, z: 540.96674}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1078,9 +1078,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 3.3933842
+    m_Target: 4.419069
     speed: 2
-    m_Value: 3.3933842
+    m_Value: 4.419069
   m_Ortho:
     m_Target: 1
     speed: 2

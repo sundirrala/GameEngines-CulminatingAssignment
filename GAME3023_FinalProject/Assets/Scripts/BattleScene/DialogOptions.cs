@@ -126,7 +126,7 @@ public class DialogOptions : MonoBehaviour
 
         MoveSelection.SetActive(false);
         MoveDetails.SetActive(false);
-        dialog.enabled = false;
+        dialog.enabled = true;
         isInFight = false;
     }
 
@@ -140,6 +140,19 @@ public class DialogOptions : MonoBehaviour
 
         Options.SetActive(false);
         dialog.enabled = false;
+    }
+
+    public void MoveUsedUI()
+    {
+        Debug.Log("Move used");
+
+
+        MoveSelection.SetActive(false);
+        MoveDetails.SetActive(false);
+        isInFight = true;
+        dialog.enabled = true;
+        Options.SetActive(false);
+
     }
 
     public void Run()

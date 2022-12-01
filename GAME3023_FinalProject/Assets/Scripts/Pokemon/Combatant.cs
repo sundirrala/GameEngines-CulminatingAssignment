@@ -11,9 +11,11 @@ public class Combatant : MonoBehaviour
     int level;
     [SerializeField]
     bool isPlayerUnit;
+    bool isFainted = false;
+
 
     
-
+    public bool IsFainted { get { return isFainted; } }
     public Pokemon pokemon { get; set; }
 
     public void Setup()
@@ -27,7 +29,12 @@ public class Combatant : MonoBehaviour
         {
             GetComponent<Image>().sprite = pokemon.Base.FrontSide;
         }
-        
+    }
+
+    public void UseMove(Combatant attacker, Combatant targetEnemy, Moves move, Target target)
+    {
+        //All UI or text stuff thats being done when return is pressed
+       isFainted = targetEnemy.pokemon.TakeDamage(move, attacker.pokemon);
 
     }
 }

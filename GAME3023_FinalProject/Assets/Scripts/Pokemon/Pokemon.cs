@@ -49,4 +49,29 @@ public class Pokemon : MonoBehaviour
         get { return Mathf.FloorToInt((Base.Speed * PokemonLevel) / 100f) + 5; }
     }
 
+    //Function that tells if the pokemon has fainted or not
+    public bool TakeDamage(Moves move, Pokemon attacker)
+    {
+        float modifiers = Random.Range(0.85f, 1f);  //Pokemon has a damage range for moves
+        float attack = (2 * attacker.PokemonLevel + 10) / 250f;
+        float defense = attack * move.Base.Damage * ((float)attacker.Attack / Defense) + 2;
+        int damage = Mathf.FloorToInt(defense * modifiers);
+
+        CurrentHP -= damage;
+
+        if (CurrentHP <= 0)
+        {
+            CurrentHP = 0;
+            return true;
+        }
+
+        return false;
+    }
+
+    //For AI move choice
+    public Moves GetRandomMove()
+    {
+        int rand = Random.Range(0, currentMoves.Count);
+        return currentMoves[rand];
+    }
 }

@@ -8,6 +8,8 @@ public class BattleSystem : MonoBehaviour
     int TurnNumber;
     /// All UI Elements that are needed
     /// </Setting up all the ui and grabbing references to whatever I need>
+    
+    //List<Combatant> combatants = new List<Combatant>();
     [SerializeField]
     Combatant PlayerUnit, EnemyUnit;
     [SerializeField]
@@ -15,12 +17,15 @@ public class BattleSystem : MonoBehaviour
     [SerializeField]
     DialogOptions DialogOptions;
 
-    /// 
+    Moves PlayerMove, EnemyMove;
+    bool PlayerMadeChoice = false;
     int TurnOrder;
     int CurrentMove;
-    //List<Combatant> combatants;
-
-    //Queue<Combatant> actionOrder;
+    [SerializeField]
+    List<Combatant> CalculateActionOrder;
+    Queue<Moves> actionOrder;
+    //Dictionary<Combatant, Moves> CurrentTurnMoves = new Dictionary<Combatant, Moves>();
+    //List<Moves> CurrentTurnMoves = new List<Moves>();
 
     //event OnEffectActivated<IEffects>;
     public delegate void OnTurnBegin(int TurnNumber);
@@ -28,6 +33,7 @@ public class BattleSystem : MonoBehaviour
 
     private void Start()
     {
+
         SetupUI();
     }
 
@@ -36,7 +42,36 @@ public class BattleSystem : MonoBehaviour
         if (DialogOptions.IsInFight)
         {
             HandleMoveSelection();
+            if (PlayerMadeChoice)
+            {
+
+                //Order the turn correctly
+                if (PlayerUnit.pokemon.Base.Speed < EnemyUnit.pokemon.Base.Speed)
+                {
+                    StartCoroutine(EnemyUseMove(true)); //Will automatically go into the next units move
+                }
+                //Player is FASTER than enemy
+                else if (PlayerUnit.pokemon.Base.Speed > EnemyUnit.pokemon.Base.Speed)
+                {
+                    StartCoroutine(PlayerUseMove(true)); //Will automatically go into the next units move
+                }
+                //Player is TIED in speed w enemy
+                else if (PlayerUnit.pokemon.Base.Speed == EnemyUnit.pokemon.Base.Speed)
+                {
+                    //Player will go first bc why not
+                    StartCoroutine(PlayerUseMove(true)); //Will automatically go into the next units move
+                }
+                //LoopThroughTurn();
+
+                DialogOptions.ResetText();
+                PlayerMadeChoice = false;
+                PlayerMove = null;
+                EnemyMove = null;
+            }
         }
+
+
+        
     }
 
     public void SetupUI()
@@ -89,37 +124,110 @@ public class BattleSystem : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            //Add to the queue for moves happening this turn
-            DialogOptions.ResetText();
-            PerformMove(PlayerUnit, PlayerUnit.pokemon.currentMoves[CurrentMove].Base.Target); //Takes the players move to put into queue
-        }
+            //ui for move
+            DialogOptions.MoveUsedUI();
 
-        void TargetChoice(Target target)
-        {
-            if (target == Target.Self)
-            {
-
-            }
-            if (target == Target.Both)
-            {
-
-            }
-            if (target == Target.Other)
-            {
-
-            }
-            if (target == Target.All)
-            {
-
-            }
-        }
-
-        //Going to be called multiple times in a turn in queue
-        void PerformMove(Combatant combatant, Target target)
-        {
-            var move = combatant.pokemon.currentMoves[CurrentMove]; //To Change later, find a way for enemy to choose move
-            //Possibly switch to a corutine or have one to display which move was used
+            //Player uses a move
+            PlayerMadeChoice = true;
+            //Current move for later use
+            //StartCoroutine(DialogOptions.TypeDialog($"{PlayerUnit.pokemon.Base.Name} used {PlayerUnit.pokemon.currentMoves[CurrentMove].Base.Name}!"));
+            //PlayerUnit.UseMove(PlayerUnit, EnemyUnit, PlayerUnit.pokemon.currentMoves[CurrentMove], PlayerUnit.pokemon.currentMoves[CurrentMove].Base.Target);
+            //OrderAttacks();
         }
     }
 
+    void ActionTurnDialog(Combatant unit)
+    {
+        StartCoroutine(DialogOptions.TypeDialog($"{unit.pokemon.Base.Name} used {unit.pokemon.currentMoves[CurrentMove].Base.Name}!"));
+        Debug.Log("Unit Used: " + unit.pokemon.currentMoves[CurrentMove].Base.Name);
+    }
+
+    public void OrderAttacks()
+    {
+        ///Checking Unit's Speed
+        //Player is SLOWER than enemy
+        
+
+        Debug.Log($"{CalculateActionOrder[0]} is first, {CalculateActionOrder[1]} is second");
+        //Now that we have the order of the moves...
+        //I need to put into a queue which move will be used first, and so on
+        //Once player has made their choice and the bool is true, get a random move the the enemy to use, and put it in the queue *DONE*
+    }
+
+    //Meant to go through each iteration of the action order queue and have said unit to use a move
+    public void LoopThroughTurn()
+    {
+        //Goes through for each action in the queue
+        for (int i = 0; i < CalculateActionOrder.Count; i++)
+        {
+            //Calculates the order of the moves used
+            if (CalculateActionOrder[i] == PlayerUnit)
+            {
+                CalculateActionOrder[i].UseMove(CalculateActionOrder[i], EnemyUnit, PlayerMove, PlayerMove.Base.Target);
+                ActionTurnDialog(CalculateActionOrder[i]);
+                EnemyHUD.UpdateHP();
+            }
+            else if (CalculateActionOrder[i] == EnemyUnit)
+            {
+                EnemyMove = CalculateActionOrder[i].pokemon.GetRandomMove();
+                actionOrder.Enqueue(EnemyMove);
+                ActionTurnDialog(CalculateActionOrder[i]);
+                PlayerHUD.UpdateHP();
+            }
+        }
+
+    }
+
+    IEnumerator PlayerUseMove(bool didGoFirst)
+    {
+        var Move = PlayerUnit.pokemon.currentMoves[CurrentMove];
+
+        yield return DialogOptions.TypeDialog($"{PlayerUnit.pokemon.Base.Name} used {Move.Base.Name}!");
+
+        yield return new WaitForSeconds(1f);
+
+        bool isFainted = EnemyUnit.pokemon.TakeDamage(Move, PlayerUnit.pokemon);
+        EnemyHUD.UpdateHP();
+        Debug.Log("Enemy Hp is " + EnemyUnit.pokemon.CurrentHP);
+
+        if (isFainted)
+        {
+            yield return DialogOptions.TypeDialog($"{EnemyUnit.pokemon.Base.Name} Fainted!");
+        }
+        if (didGoFirst)
+        {
+            StartCoroutine(EnemyUseMove(false));
+        }
+    }
+
+    IEnumerator EnemyUseMove(bool DidGoFirst)
+    {
+        var Move = EnemyUnit.pokemon.GetRandomMove();
+
+        yield return DialogOptions.TypeDialog($"{EnemyUnit.pokemon.Base.Name} used {Move.Base.Name}!");
+
+        yield return new WaitForSeconds(1f);
+
+        bool isFainted = PlayerUnit.pokemon.TakeDamage(Move, EnemyUnit.pokemon);
+        Debug.Log("Player Hp is " + PlayerUnit.pokemon.CurrentHP);
+        PlayerHUD.UpdateHP();
+
+        if (isFainted)
+        {
+            yield return DialogOptions.TypeDialog($"{PlayerUnit.pokemon.Base.Name} Fainted!");
+
+        }
+        if (DidGoFirst)
+        {
+            StartCoroutine(PlayerUseMove(false));
+        }
+    }
 }
+
+
+//TODO
+//Figure out if there are any status effects
+//Order all of the combatants speeds
+//Based of the units speeds, use the moves chosen from fastest to slowest
+
+//Once the queue is full from the moves, what do
