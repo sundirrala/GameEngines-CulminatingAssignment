@@ -152,8 +152,8 @@ public class BattleSystem : MonoBehaviour
     public void LoopThroughTurn()
     {
         OrderAttacks();
-        DialogOptions.ResetText();
         PlayerMadeChoice = false;
+        DialogOptions.ResetText();
         //StartCoroutine(DialogOptions.TypeDialog("Choose an action"));
     }
 
@@ -177,6 +177,11 @@ public class BattleSystem : MonoBehaviour
         {
             StartCoroutine(EnemyUseMove(false));
         }
+        else
+        {
+            yield return DialogOptions.TypeDialog($"Choose an action: ");
+            DialogOptions.SetOptions(true);
+        }
     }
 
     IEnumerator EnemyUseMove(bool DidGoFirst)
@@ -199,6 +204,11 @@ public class BattleSystem : MonoBehaviour
         if (DidGoFirst)
         {
             StartCoroutine(PlayerUseMove(false));
+        }
+        else
+        {
+            yield return DialogOptions.TypeDialog($"Choose an action: ");
+            DialogOptions.SetOptions(true);
         }
     }
 }

@@ -117,13 +117,18 @@ public class DialogOptions : MonoBehaviour
     /// Basic Functions for buttons and setting active GO / text
     /// </summary>
 
+    public void SetOptions(bool active)
+    {
+        Options.SetActive(active);
+    }
+
     public void ResetText()
     {
         //OPTIONS ON
         //MOVE DETAILS OFF
         //MOVES OFF
         //DIALOG TEXT OFF
-        Options.SetActive(true);
+        //Options.SetActive(true);
         MoveSelection.SetActive(false);
         MoveDetails.SetActive(false);
         dialog.enabled = true;
