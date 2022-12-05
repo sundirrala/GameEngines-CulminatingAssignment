@@ -58,7 +58,7 @@ public class Pokemon : MonoBehaviour
         int damage = Mathf.FloorToInt(defense * modifiers);
 
         CurrentHP -= damage;
-
+        Debug.Log(attacker + " has done " + damage + "to the other pokemon. Current HP is " + CurrentHP);
         if (CurrentHP <= 0)
         {
             CurrentHP = 0;

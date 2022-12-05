@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class HPBar : MonoBehaviour
 {
+    [SerializeField]
     GameObject Health;
 
-    private void Awake()
-    {
-        Health = GameObject.Find("Health");
-    }
+    
 
 
     public void SetHP(float HP)

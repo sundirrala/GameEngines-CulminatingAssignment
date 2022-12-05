@@ -123,11 +123,13 @@ public class DialogOptions : MonoBehaviour
         //MOVE DETAILS OFF
         //MOVES OFF
         //DIALOG TEXT OFF
-
+        Options.SetActive(true);
         MoveSelection.SetActive(false);
         MoveDetails.SetActive(false);
         dialog.enabled = true;
         isInFight = false;
+
+        TypeDialog("Choose an action: ");
     }
 
     public void Fight()

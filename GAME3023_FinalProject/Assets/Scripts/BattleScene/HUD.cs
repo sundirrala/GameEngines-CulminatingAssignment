@@ -10,11 +10,11 @@ public class HUD : MonoBehaviour
     [SerializeField]
     HPBar HP;
 
-    Pokemon Pokemon;
+    Pokemon _Pokemon;
 
     public void SetupHUD(Pokemon pokemon)
     {
-        Pokemon = pokemon;
+        _Pokemon = pokemon;
 
         NameText.text = pokemon.Base.name;
         LevelText.text = "Lvl " + pokemon.PokemonLevel;
@@ -23,6 +23,6 @@ public class HUD : MonoBehaviour
 
     public void UpdateHP()
     {
-        HP.SetHP((float)Pokemon.CurrentHP / Pokemon.MaxHealth);
+        HP.SetHP((float)_Pokemon.CurrentHP / _Pokemon.MaxHealth);
     }
 }

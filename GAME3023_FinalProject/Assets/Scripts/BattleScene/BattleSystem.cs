@@ -44,29 +44,7 @@ public class BattleSystem : MonoBehaviour
             HandleMoveSelection();
             if (PlayerMadeChoice)
             {
-
-                //Order the turn correctly
-                if (PlayerUnit.pokemon.Base.Speed < EnemyUnit.pokemon.Base.Speed)
-                {
-                    StartCoroutine(EnemyUseMove(true)); //Will automatically go into the next units move
-                }
-                //Player is FASTER than enemy
-                else if (PlayerUnit.pokemon.Base.Speed > EnemyUnit.pokemon.Base.Speed)
-                {
-                    StartCoroutine(PlayerUseMove(true)); //Will automatically go into the next units move
-                }
-                //Player is TIED in speed w enemy
-                else if (PlayerUnit.pokemon.Base.Speed == EnemyUnit.pokemon.Base.Speed)
-                {
-                    //Player will go first bc why not
-                    StartCoroutine(PlayerUseMove(true)); //Will automatically go into the next units move
-                }
-                //LoopThroughTurn();
-
-                DialogOptions.ResetText();
-                PlayerMadeChoice = false;
-                PlayerMove = null;
-                EnemyMove = null;
+                LoopThroughTurn();
             }
         }
 
@@ -145,10 +123,26 @@ public class BattleSystem : MonoBehaviour
     public void OrderAttacks()
     {
         ///Checking Unit's Speed
+        //Order the turn correctly
         //Player is SLOWER than enemy
-        
+        if (PlayerUnit.pokemon.Base.Speed < EnemyUnit.pokemon.Base.Speed)
+        {
+            StartCoroutine(EnemyUseMove(true)); //Will automatically go into the next units move
+        }
+        //Player is FASTER than enemy
+        else if (PlayerUnit.pokemon.Base.Speed > EnemyUnit.pokemon.Base.Speed)
+        {
+            StartCoroutine(PlayerUseMove(true)); //Will automatically go into the next units move
+        }
+        //Player is TIED in speed w enemy
+        else if (PlayerUnit.pokemon.Base.Speed == EnemyUnit.pokemon.Base.Speed)
+        {
+            //Player will go first bc why not
+            StartCoroutine(PlayerUseMove(true)); //Will automatically go into the next units move
+        }
+        //LoopThroughTurn();
 
-        Debug.Log($"{CalculateActionOrder[0]} is first, {CalculateActionOrder[1]} is second");
+
         //Now that we have the order of the moves...
         //I need to put into a queue which move will be used first, and so on
         //Once player has made their choice and the bool is true, get a random move the the enemy to use, and put it in the queue *DONE*
@@ -157,25 +151,10 @@ public class BattleSystem : MonoBehaviour
     //Meant to go through each iteration of the action order queue and have said unit to use a move
     public void LoopThroughTurn()
     {
-        //Goes through for each action in the queue
-        for (int i = 0; i < CalculateActionOrder.Count; i++)
-        {
-            //Calculates the order of the moves used
-            if (CalculateActionOrder[i] == PlayerUnit)
-            {
-                CalculateActionOrder[i].UseMove(CalculateActionOrder[i], EnemyUnit, PlayerMove, PlayerMove.Base.Target);
-                ActionTurnDialog(CalculateActionOrder[i]);
-                EnemyHUD.UpdateHP();
-            }
-            else if (CalculateActionOrder[i] == EnemyUnit)
-            {
-                EnemyMove = CalculateActionOrder[i].pokemon.GetRandomMove();
-                actionOrder.Enqueue(EnemyMove);
-                ActionTurnDialog(CalculateActionOrder[i]);
-                PlayerHUD.UpdateHP();
-            }
-        }
-
+        OrderAttacks();
+        DialogOptions.ResetText();
+        PlayerMadeChoice = false;
+        //StartCoroutine(DialogOptions.TypeDialog("Choose an action"));
     }
 
     IEnumerator PlayerUseMove(bool didGoFirst)
