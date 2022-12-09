@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 
 public class PlayerController : MonoBehaviour
 {
@@ -59,21 +61,5 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    public void SavePlayer()
-    {
-        SaveSystem.SavePlayer(this);
-    }
-
-    public void LoadPlayer()
-    {
-        SavePlayerData data = SaveSystem.LoadPlayer();
-
-        Vector3 pos;
-        pos.x = data.pos[0];
-        pos.y = data.pos[1];
-        pos.z = data.pos[2];
-        transform.position = pos;
-
-        Debug.Log("The player's position is " + pos);
-    }
+    
 }

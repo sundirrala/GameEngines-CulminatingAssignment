@@ -1,9 +1,20 @@
 using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
-public static class SaveSystem
+public class SaveSystem : MonoBehaviour
 {
-    public static void SavePlayer(PlayerController player)
+    [SerializeField]
+    private PlayerController player;
+
+
+
+    void Start()
+    {
+        player = FindObjectOfType<PlayerController>();
+    }
+
+
+    public void SavePlayer(PlayerController player)
     {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/player.txt";
@@ -12,9 +23,10 @@ public static class SaveSystem
         SavePlayerData data = new SavePlayerData(player);
         formatter.Serialize(stream, data);
         stream.Close();
+      
     }
 
-    public static SavePlayerData LoadPlayer()
+    public SavePlayerData LoadPlayer()
     {
         string path = Application.persistentDataPath + "/player.txt";
         if(File.Exists(path))
@@ -32,5 +44,24 @@ public static class SaveSystem
             Debug.LogError("Save file not found in " + path);
             return null;
         }
+    }
+
+    public void EvtSavePlayer()
+    {
+        Debug.Log("Saving");
+        SavePlayer(player);
+    }
+
+    public void EvtLoadPlayer()
+    {
+        Debug.Log("Loading...");
+        SavePlayerData data = LoadPlayer();
+
+        Vector2 pos;
+        pos.x = data.pos.x;
+        pos.y = data.pos.y;
+        player.transform.position = pos;
+
+        Debug.Log("The player's position is " + pos);
     }
 }

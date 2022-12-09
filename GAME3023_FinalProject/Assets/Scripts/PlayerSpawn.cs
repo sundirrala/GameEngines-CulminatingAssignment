@@ -14,36 +14,15 @@ public class PlayerSpawn : MonoBehaviour
     /// <summary>
     /// Access to the Original Player
     /// </summary>
-    public static PlayerController Player
-    {
-        get { return player; }
-        private set { }
-    }
+    public static PlayerController Player => player;
 
     private void Awake()
     {
-        if(player == null)
+        if (player == null)
         {
             GameObject newObject = Instantiate(playerPrefab, transform.position, Quaternion.identity);
             player = newObject.GetComponent<PlayerController>();
         }
     }
 
-    public void SavePlayer()
-    {
-        SaveSystem.SavePlayer(GetComponent<PlayerController>());
-    }
-
-    public void LoadPlayer()
-    {
-        SavePlayerData data = SaveSystem.LoadPlayer();
-
-        Vector3 pos;
-        pos.x = data.pos[0];
-        pos.y = data.pos[1];
-        pos.z = data.pos[2];
-        transform.position = pos;
-
-        Debug.Log("The player's position is " + pos);
-    }
 }
