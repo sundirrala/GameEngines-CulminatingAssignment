@@ -14,12 +14,6 @@ public class PlayerController : MonoBehaviour
 
     Vector3 movement;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -63,5 +57,23 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("Player triggered with: " + collision.gameObject.name);
 
+    }
+
+    public void SavePlayer()
+    {
+        SaveSystem.SavePlayer(this);
+    }
+
+    public void LoadPlayer()
+    {
+        SavePlayerData data = SaveSystem.LoadPlayer();
+
+        Vector3 pos;
+        pos.x = data.pos[0];
+        pos.y = data.pos[1];
+        pos.z = data.pos[2];
+        transform.position = pos;
+
+        Debug.Log("The player's position is " + pos);
     }
 }
