@@ -9,6 +9,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     Rigidbody2D rigBod;
 
+
+    Combatant unit;
+    [SerializeField]
+    PokemonSO Pokemon;
+    [SerializeField]
+    int PokemonLevel;
+
     [SerializeField]
     [Range(0, 10)]
     private float MoveSpeed = 10.0f;
@@ -58,7 +65,9 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Player triggered with: " + collision.gameObject.name);
-
+        //To Add: Checking which tag the trigger is hitting, to see if its tall grass
+        //I think thats how you would set the players pokemon, but unsure
+        //unit.Setup(Pokemon, PokemonLevel);
     }
 
     

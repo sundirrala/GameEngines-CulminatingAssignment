@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class BattleSystem : MonoBehaviour
 {
@@ -16,6 +17,12 @@ public class BattleSystem : MonoBehaviour
     HUD PlayerHUD, EnemyHUD;
     [SerializeField]
     DialogOptions DialogOptions;
+
+
+    //[SerializeField]
+    //PokemonSO testbase;
+    //[SerializeField]
+    //int leveltest;
 
     Moves PlayerMove, EnemyMove;
     bool PlayerMadeChoice = false;
@@ -50,6 +57,11 @@ public class BattleSystem : MonoBehaviour
 
 
         
+    }
+
+    public void SetPlayer(PokemonSO pkBase, int level)
+    {
+        //PlayerUnit.Setup(pkBase, level);
     }
 
     public void SetupUI()
@@ -166,12 +178,16 @@ public class BattleSystem : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         bool isFainted = EnemyUnit.pokemon.TakeDamage(Move, PlayerUnit.pokemon);
-        EnemyHUD.UpdateHP();
+        if (Move.Base.Damage > 0)
+        {
+            EnemyHUD.UpdateHP();
+        }
         Debug.Log("Enemy Hp is " + EnemyUnit.pokemon.CurrentHP);
 
         if (isFainted)
         {
             yield return DialogOptions.TypeDialog($"{EnemyUnit.pokemon.Base.Name} Fainted!");
+            PlayerWin();
         }
         if (didGoFirst)
         {
@@ -194,11 +210,14 @@ public class BattleSystem : MonoBehaviour
 
         bool isFainted = PlayerUnit.pokemon.TakeDamage(Move, EnemyUnit.pokemon);
         Debug.Log("Player Hp is " + PlayerUnit.pokemon.CurrentHP);
-        PlayerHUD.UpdateHP();
-
+        if (Move.Base.Damage > 0)
+        {
+            PlayerHUD.UpdateHP();
+        }
         if (isFainted)
         {
             yield return DialogOptions.TypeDialog($"{PlayerUnit.pokemon.Base.Name} Fainted!");
+            PlayerLose();
 
         }
         if (DidGoFirst)
@@ -211,7 +230,41 @@ public class BattleSystem : MonoBehaviour
             DialogOptions.SetOptions(true);
         }
     }
+
+    public void PlayerWin()
+    {
+        Debug.Log("Player wins");
+        if (PlayerUnit.pokemon.currentMoves.Count < 3)
+        {
+            
+            PlayerUnit.pokemon.Base.moves.Add(EnemyUnit.pokemon.GetRandomMove().Base);
+
+            Debug.Log("Player Added the move: " + EnemyUnit.pokemon.GetRandomMove().Base.Name);
+        }
+        else if (PlayerUnit.pokemon.currentMoves.Count == 3)
+        {
+            int rand = Random.Range(0, PlayerUnit.pokemon.Base.moves.Count);
+            Debug.Log("Player removed the move: " + PlayerUnit.pokemon.Base.moves[rand].Name);
+            PlayerUnit.pokemon.Base.moves.RemoveAt(rand);
+            PlayerUnit.pokemon.Base.moves.Add(EnemyUnit.pokemon.GetRandomMove().Base);
+            Debug.Log("Player Added the move: " + EnemyUnit.pokemon.GetRandomMove().Base.Name);
+
+        }
+
+        //To change to whereever we want the player to go after they win. If going to main menu may want to clear saved data or somethin
+        SceneManager.LoadScene("FinalWorldMap", LoadSceneMode.Single);
+    }
+
+    public void PlayerLose()
+    {
+        Debug.Log("Player lost");
+        //To change to whereever we want the player to go after they lose. If going to main menu may want to clear saved data or somethin
+        SceneManager.LoadScene("FinalWorldMap", LoadSceneMode.Single);
+    }
+
 }
+
+
 
 
 //TODO

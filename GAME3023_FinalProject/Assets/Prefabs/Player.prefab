@@ -187,6 +187,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigBod: {fileID: 9076041226544294787}
+  Pokemon: {fileID: 11400000, guid: d04d61a40b37be843867e70fbb58fdfa, type: 2}
+  PokemonLevel: 8
   MoveSpeed: 10
   animator: {fileID: 3629980867587248260}
 --- !u!95 &3629980867587248260
