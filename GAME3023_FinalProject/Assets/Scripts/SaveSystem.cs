@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using UnityEngine.SceneManagement;
 public class SaveSystem : MonoBehaviour
 {
     [SerializeField]
@@ -61,6 +62,8 @@ public class SaveSystem : MonoBehaviour
         pos.x = data.pos.x;
         pos.y = data.pos.y;
         player.transform.position = pos;
+
+        SceneManager.LoadScene(data.activeSceneName);
 
         Debug.Log("The player's position is " + pos);
     }
