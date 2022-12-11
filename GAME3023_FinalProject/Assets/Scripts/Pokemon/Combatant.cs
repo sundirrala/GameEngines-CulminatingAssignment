@@ -8,7 +8,7 @@ public class Combatant : MonoBehaviour
     [SerializeField]
     PokemonSO pokemonBase;
     [SerializeField]
-    int level;
+    int Level;
     [SerializeField]
     bool isPlayerUnit;
     bool isFainted = false;
@@ -16,11 +16,15 @@ public class Combatant : MonoBehaviour
 
     
     public bool IsFainted { get { return isFainted; } }
+
+    
     public Pokemon pokemon { get; set; }
+    
+
 
     public void Setup()
     {
-        pokemon = new Pokemon(pokemonBase, level);
+        pokemon = new Pokemon(pokemonBase, Level);
         if (isPlayerUnit)
         {
             GetComponent<Image>().sprite = pokemon.Base.BackSide;

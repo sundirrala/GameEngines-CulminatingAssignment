@@ -643,7 +643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemonBase: {fileID: 11400000, guid: 80698de6de052784699585aa3c93b721, type: 2}
-  level: 5
+  Level: 5
   isPlayerUnit: 0
 --- !u!114 &236624448
 MonoBehaviour:
@@ -1942,7 +1942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemonBase: {fileID: 11400000, guid: 2b2706f581f276a4e9573f90ae6740b6, type: 2}
-  level: 5
+  Level: 8
   isPlayerUnit: 1
 --- !u!1 &1224480702
 GameObject:
