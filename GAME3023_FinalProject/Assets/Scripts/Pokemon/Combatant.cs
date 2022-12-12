@@ -17,14 +17,19 @@ public class Combatant : MonoBehaviour
     
     public bool IsFainted { get { return isFainted; } }
 
-    public Pokemon pokemon { get; set; }
+    public bool SetisPlayerUnit(bool playerunit) 
+    { 
+        isPlayerUnit = playerunit;
+        return isPlayerUnit;
+    }
+    public Pokemon Pokemon { get; set; }
     
     public PokemonSO PokemonBase { get; set; }
     public int PokemonLevel { get; set; }
 
-    public void Setup()
+    public void Setup(Pokemon pokemon)
     {
-        pokemon = new Pokemon(pokemonBase, Level);
+        pokemon = Pokemon;
         if (isPlayerUnit)
         {
             GetComponent<Image>().sprite = pokemon.Base.BackSide;
@@ -38,7 +43,7 @@ public class Combatant : MonoBehaviour
     public void UseMove(Combatant attacker, Combatant targetEnemy, Moves move, Target target)
     {
         //All UI or text stuff thats being done when return is pressed
-       isFainted = targetEnemy.pokemon.TakeDamage(move, attacker.pokemon);
+       isFainted = targetEnemy.Pokemon.TakeDamage(move, attacker.Pokemon);
 
     }
 }

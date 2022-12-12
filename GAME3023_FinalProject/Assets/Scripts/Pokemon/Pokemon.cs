@@ -19,12 +19,15 @@ public class Pokemon : MonoBehaviour
     public List<Moves> currentMoves { get; set; }
 
 
-    
-
     public Pokemon(PokemonSO so, int level)
     {
         Base = so;
         PokemonLevel = level;
+    }
+
+    public void Init()
+    {
+        
         CurrentHP = MaxHealth; //Setting current hp to the pokemon's max
         //Possible ability to have list of learnable moves, time permitting
 
