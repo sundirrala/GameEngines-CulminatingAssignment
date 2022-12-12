@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Runtime.Serialization.Formatters.Binary;
@@ -9,12 +10,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     Rigidbody2D rigBod;
 
+    [SerializeField, Tooltip("The layer that the player can encounter a wild pokemon on")]
+    LayerMask GrassLayer;
 
-    Combatant unit;
-    [SerializeField]
-    PokemonSO Pokemon;
-    [SerializeField]
-    int PokemonLevel;
+    [SerializeField, Tooltip("Encounter chance to run into a battle"), Range(1, 100)]
+    int EncounterChance = 10;
+
+    public event Action OnEncountered;
 
     [SerializeField]
     [Range(0, 10)]
@@ -65,10 +67,24 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Player triggered with: " + collision.gameObject.name);
-        //To Add: Checking which tag the trigger is hitting, to see if its tall grass
-        //I think thats how you would set the players pokemon, but unsure
-        //unit.Setup(Pokemon, PokemonLevel);
+        if (tag == "Grass")
+        {
+            if (UnityEngine.Random.Range(1, 101) <= EncounterChance)
+            {
+                OnEncountered();
+            }
+        }
     }
 
-    
+    //To see if the player will encounter an enemy on the layer the grass is on
+    //void CheckForEncounter()
+    //{
+    //    if (Physics2D.OverlapCircle(transform.position, 0.2f, GrassLayer) != null)
+    //    {
+    //        if (UnityEngine.Random.Range(1, 101) <= EncounterChance)
+    //        {
+    //            OnEncountered();
+    //        }
+    //    }
+    //}
 }

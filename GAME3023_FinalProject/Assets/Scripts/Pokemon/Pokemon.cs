@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Pokemon : MonoBehaviour
 {
+    [SerializeField]
+    PokemonSO pokemonBase;
+    [SerializeField]
+    int pokemonLevel;
+    
     public PokemonSO Base { get; set; }
     public int PokemonLevel { get; set; }
     public int CurrentHP { get; set; }
@@ -14,10 +19,15 @@ public class Pokemon : MonoBehaviour
     public List<Moves> currentMoves { get; set; }
 
 
-    public Pokemon(PokemonSO SO, int level)
+    public Pokemon(PokemonSO so, int level)
     {
-        Base = SO;   //Setting the pokemon to the scriptable object
-        PokemonLevel = level; //Same with level
+        Base = so;
+        PokemonLevel = level;
+    }
+
+    public void Init()
+    {
+        
         CurrentHP = MaxHealth; //Setting current hp to the pokemon's max
         //Possible ability to have list of learnable moves, time permitting
 
