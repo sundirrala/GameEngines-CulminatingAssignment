@@ -166,7 +166,11 @@ public class BattleSystem : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         bool isFainted = EnemyUnit.pokemon.TakeDamage(Move, PlayerUnit.pokemon);
-        EnemyHUD.UpdateHP();
+        if (Move.Base.Damage > 0)
+        {
+
+            EnemyHUD.UpdateHP();
+        }
         Debug.Log("Enemy Hp is " + EnemyUnit.pokemon.CurrentHP);
 
         if (isFainted)
@@ -193,9 +197,11 @@ public class BattleSystem : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         bool isFainted = PlayerUnit.pokemon.TakeDamage(Move, EnemyUnit.pokemon);
+        if (Move.Base.Damage > 0)
+        {
+            PlayerHUD.UpdateHP();
+        }
         Debug.Log("Player Hp is " + PlayerUnit.pokemon.CurrentHP);
-        PlayerHUD.UpdateHP();
-
         if (isFainted)
         {
             yield return DialogOptions.TypeDialog($"{PlayerUnit.pokemon.Base.Name} Fainted!");
