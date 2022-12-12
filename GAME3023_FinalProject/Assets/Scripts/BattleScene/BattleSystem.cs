@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class BattleSystem : MonoBehaviour
 {
@@ -176,6 +177,7 @@ public class BattleSystem : MonoBehaviour
         if (isFainted)
         {
             yield return DialogOptions.TypeDialog($"{EnemyUnit.pokemon.Base.Name} Fainted!");
+            PlayerWin();
         }
         if (didGoFirst)
         {
@@ -205,6 +207,7 @@ public class BattleSystem : MonoBehaviour
         if (isFainted)
         {
             yield return DialogOptions.TypeDialog($"{PlayerUnit.pokemon.Base.Name} Fainted!");
+            PlayerLose();
 
         }
         if (DidGoFirst)
@@ -216,6 +219,32 @@ public class BattleSystem : MonoBehaviour
             yield return DialogOptions.TypeDialog($"Choose an action: ");
             DialogOptions.SetOptions(true);
         }
+    }
+
+    void PlayerWin()
+    {
+        Debug.Log("Player wins");
+        if (PlayerUnit.pokemon.currentMoves.Count < 4)
+        {
+            PlayerUnit.pokemon.Base.moves.Add(EnemyUnit.pokemon.GetRandomMove().Base);
+            Debug.Log("Player Added move: " + EnemyUnit.pokemon.GetRandomMove().Base.Name);
+        }
+        else if (PlayerUnit.pokemon.currentMoves.Count >= 4)
+        {
+            int rand = Random.Range(0, PlayerUnit.pokemon.Base.moves.Count);
+            Debug.Log("Player removed the move: " + PlayerUnit.pokemon.Base.moves[rand].Name);
+            PlayerUnit.pokemon.Base.moves.RemoveAt(rand);
+            PlayerUnit.pokemon.Base.moves.Add(EnemyUnit.pokemon.GetRandomMove().Base);
+            Debug.Log("Player Added the move: " + EnemyUnit.pokemon.GetRandomMove().Base.Name);
+        }
+
+        SceneManager.LoadScene("FinalForest", LoadSceneMode.Single);
+    }   
+
+    void PlayerLose()
+    {
+        Debug.Log("Player has lost");
+        SceneManager.LoadScene("FinalForest", LoadSceneMode.Single);
     }
 }
 
