@@ -13,10 +13,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField, Tooltip("The layer that the player can encounter a wild pokemon on")]
     LayerMask GrassLayer;
 
-    [SerializeField, Tooltip("Encounter chance to run into a battle"), Range(1, 100)]
-    int EncounterChance = 10;
-
-    public event Action OnEncountered;
 
     [SerializeField]
     [Range(0, 10)]
@@ -67,13 +63,13 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Player triggered with: " + collision.gameObject.name);
-        if (tag == "Grass")
-        {
-            if (UnityEngine.Random.Range(1, 101) <= EncounterChance)
-            {
-                OnEncountered();
-            }
-        }
+        //if (tag == "Grass")
+        //{
+        //    if (UnityEngine.Random.Range(1, 101) <= EncounterChance)
+        //    {
+        //        OnEncountered();
+        //    }
+        //}
     }
 
     //To see if the player will encounter an enemy on the layer the grass is on

@@ -5940,7 +5940,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3221168206458524632, guid: 7f7da9a380a9f6f45b0b4788e85356b5, type: 3}
       propertyPath: m_Name
-      value: SpawnToWorld
+      value: PlayerSpawn
       objectReference: {fileID: 0}
     - target: {fileID: 4236645884492043757, guid: 7f7da9a380a9f6f45b0b4788e85356b5, type: 3}
       propertyPath: m_RootOrder
@@ -6646,7 +6646,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &778296770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9719,81 +9719,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1001 &1082552598
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 2
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1457561838143213097, guid: 309fbbbeb68b5984cb7d5e97e9c3a7b5, type: 3}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1457561838143213097, guid: 309fbbbeb68b5984cb7d5e97e9c3a7b5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.29
-      objectReference: {fileID: 0}
-    - target: {fileID: 1457561838143213097, guid: 309fbbbeb68b5984cb7d5e97e9c3a7b5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.48
-      objectReference: {fileID: 0}
-    - target: {fileID: 1457561838143213097, guid: 309fbbbeb68b5984cb7d5e97e9c3a7b5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 5.4463983
-      objectReference: {fileID: 0}
-    - target: {fileID: 1457561838143213097, guid: 309fbbbeb68b5984cb7d5e97e9c3a7b5, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1457561838143213097, guid: 309fbbbeb68b5984cb7d5e97e9c3a7b5, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1457561838143213097, guid: 309fbbbeb68b5984cb7d5e97e9c3a7b5, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1457561838143213097, guid: 309fbbbeb68b5984cb7d5e97e9c3a7b5, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1457561838143213097, guid: 309fbbbeb68b5984cb7d5e97e9c3a7b5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1457561838143213097, guid: 309fbbbeb68b5984cb7d5e97e9c3a7b5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1457561838143213097, guid: 309fbbbeb68b5984cb7d5e97e9c3a7b5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1457561838143213098, guid: 309fbbbeb68b5984cb7d5e97e9c3a7b5, type: 3}
-      propertyPath: m_Size.x
-      value: 0.94597715
-      objectReference: {fileID: 0}
-    - target: {fileID: 1457561838143213098, guid: 309fbbbeb68b5984cb7d5e97e9c3a7b5, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.85434127
-      objectReference: {fileID: 0}
-    - target: {fileID: 1457561838143213099, guid: 309fbbbeb68b5984cb7d5e97e9c3a7b5, type: 3}
-      propertyPath: m_Name
-      value: Portal (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1457561838143213099, guid: 309fbbbeb68b5984cb7d5e97e9c3a7b5, type: 3}
-      propertyPath: m_TagString
-      value: FinalForest
-      objectReference: {fileID: 0}
-    - target: {fileID: 4234164385633132869, guid: 309fbbbeb68b5984cb7d5e97e9c3a7b5, type: 3}
-      propertyPath: targetSpawn
-      value: SpawnIntoForest
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_AddedGameObjects: []
-  m_SourcePrefab: {fileID: 100100000, guid: 309fbbbeb68b5984cb7d5e97e9c3a7b5, type: 3}
 --- !u!1 &1094907027
 GameObject:
   m_ObjectHideFlags: 0
@@ -10191,7 +10116,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4234164385633132869, guid: 309fbbbeb68b5984cb7d5e97e9c3a7b5, type: 3}
       propertyPath: targetSpawn
-      value: SpawnToTown
+      value: SpawnFromWorld
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

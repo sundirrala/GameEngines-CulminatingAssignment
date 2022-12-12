@@ -30,7 +30,7 @@ public class EncounterChance : MonoBehaviour
 
         var WildPokemon = new Pokemon(pokemonEncounter.pokemon, level);
 
-        WildPokemon.Init();
+        //WildPokemon.Init();
         return WildPokemon;
     }
 

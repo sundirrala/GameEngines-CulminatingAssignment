@@ -10,10 +10,10 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class Portal : MonoBehaviour
 {
-    [SerializeField]
-    GameObject Player, BattleSystem;
-    [SerializeField, Tooltip("Used for reference to the encounters on this route")]
-    EncounterChance encounters;
+    //[SerializeField]
+    //GameObject Player, BattleSystem;
+    //[SerializeField, Tooltip("Used for reference to the encounters on this route")]
+    //EncounterChance encounters;
     // target scene
     // target location within scene
     // who can travel?
@@ -29,21 +29,9 @@ public class Portal : MonoBehaviour
 
         if(traveller != null)
         {
-            if (tag == "Grass")
-            {
-                BattleSystem.GetComponent<BattleSystem>().SetupUnits(Player.GetComponent<Pokemon>(), encounters.GetRandomEncounter());
-                BattleSystem.SetActive(true);
-                //Setup player & enemy
-                Debug.Log("Portal warping " + traveller.gameObject.name);
-                //traveller.SetSpawn(targetSpawn);
-                SceneManager.LoadScene(tag, LoadSceneMode.Single);
-            }
-            else
-            {
-                Debug.Log("Portal warping " + traveller.gameObject.name);
-                traveller.SetSpawn(targetSpawn);
-                SceneManager.LoadScene(tag, LoadSceneMode.Single);
-            }
+            Debug.Log("Portal warping " + traveller.gameObject.name);
+            traveller.SetSpawn(targetSpawn);
+            SceneManager.LoadScene(tag, LoadSceneMode.Single);
         }
     }
 
