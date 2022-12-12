@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 3539832739934600694}
   - component: {fileID: 9076041226544294787}
   - component: {fileID: -1421305341477651476}
+  - component: {fileID: -4972663260174239575}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -187,8 +188,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigBod: {fileID: 9076041226544294787}
-  Pokemon: {fileID: 11400000, guid: d04d61a40b37be843867e70fbb58fdfa, type: 2}
-  PokemonLevel: 8
+  GrassLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  EncounterChance: 20
   MoveSpeed: 10
   animator: {fileID: 3629980867587248260}
 --- !u!95 &3629980867587248260
@@ -260,3 +263,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: face4993f5b86b643bc7b39be1e34f7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-4972663260174239575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3629980867587248312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44044e24173eeb54f8cdbd313c864022, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pokemonBase: {fileID: 11400000, guid: d04d61a40b37be843867e70fbb58fdfa, type: 2}
+  pokemonLevel: 8

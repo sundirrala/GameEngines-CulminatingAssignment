@@ -12,7 +12,8 @@ public class BattleSystem : MonoBehaviour
     
     //List<Combatant> combatants = new List<Combatant>();
     [SerializeField]
-    Combatant PlayerUnit, EnemyUnit;
+    Combatant  EnemyUnit;
+    Combatant PlayerUnit;
     [SerializeField]
     HUD PlayerHUD, EnemyHUD;
     [SerializeField]
@@ -23,6 +24,7 @@ public class BattleSystem : MonoBehaviour
     //PokemonSO testbase;
     //[SerializeField]
     //int leveltest;
+    Pokemon Player, Enemy;
 
     Moves PlayerMove, EnemyMove;
     bool PlayerMadeChoice = false;
@@ -41,8 +43,9 @@ public class BattleSystem : MonoBehaviour
     private void Start()
     {
 
-        SetupUI();
     }
+
+
 
     private void Update()
     {
@@ -59,23 +62,27 @@ public class BattleSystem : MonoBehaviour
         
     }
 
-    public void SetPlayer(PokemonSO pkBase, int level)
+    public void SetupUnits(Pokemon player, Pokemon enemy)
     {
-        //PlayerUnit.Setup(pkBase, level);
+        Player = player;
+        Enemy = enemy;
+        PlayerUnit.SetisPlayerUnit(true);
+        StartCoroutine(SetupBattle());
     }
 
-    public void SetupUI()
+    public IEnumerator SetupBattle()
     {
-        PlayerUnit.Setup();
-        EnemyUnit.Setup();
+        
+        PlayerUnit.Setup(Player);
+        EnemyUnit.Setup(Enemy);
 
-        PlayerHUD.SetupHUD(PlayerUnit.pokemon);
-        EnemyHUD.SetupHUD(EnemyUnit.pokemon);
+        PlayerHUD.SetupHUD(PlayerUnit.Pokemon);
+        EnemyHUD.SetupHUD(EnemyUnit.Pokemon);
 
         //DialogOptions.SetMoveList(PlayerUnit.pokemon.currentMoves);
-        DialogOptions.SetMoveName(PlayerUnit.pokemon.currentMoves);
+        DialogOptions.SetMoveName(PlayerUnit.Pokemon.currentMoves);
 
-        StartCoroutine(DialogOptions.TypeDialog($"A wild {EnemyUnit.pokemon.Base.name} appeared!"));
+        yield return DialogOptions.TypeDialog($"A wild {EnemyUnit.Pokemon.Base.name} appeared!");
 
     }
 
@@ -83,7 +90,7 @@ public class BattleSystem : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            if (CurrentMove < PlayerUnit.pokemon.currentMoves.Count - 1)
+            if (CurrentMove < PlayerUnit.Pokemon.currentMoves.Count - 1)
             {
                 ++CurrentMove;
             }
@@ -104,13 +111,13 @@ public class BattleSystem : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            if (CurrentMove < PlayerUnit.pokemon.currentMoves.Count - 2)
+            if (CurrentMove < PlayerUnit.Pokemon.currentMoves.Count - 2)
             {
                 CurrentMove += 2;
             }
         }
 
-        DialogOptions.UpdateMoveSelection(CurrentMove, PlayerUnit.pokemon.currentMoves[CurrentMove]);
+        DialogOptions.UpdateMoveSelection(CurrentMove, PlayerUnit.Pokemon.currentMoves[CurrentMove]);
 
         if (Input.GetKeyDown(KeyCode.Return))
         {
@@ -128,8 +135,8 @@ public class BattleSystem : MonoBehaviour
 
     void ActionTurnDialog(Combatant unit)
     {
-        StartCoroutine(DialogOptions.TypeDialog($"{unit.pokemon.Base.Name} used {unit.pokemon.currentMoves[CurrentMove].Base.Name}!"));
-        Debug.Log("Unit Used: " + unit.pokemon.currentMoves[CurrentMove].Base.Name);
+        StartCoroutine(DialogOptions.TypeDialog($"{unit.Pokemon.Base.Name} used {unit.Pokemon.currentMoves[CurrentMove].Base.Name}!"));
+        Debug.Log("Unit Used: " + unit.Pokemon.currentMoves[CurrentMove].Base.Name);
     }
 
     public void OrderAttacks()
@@ -137,17 +144,17 @@ public class BattleSystem : MonoBehaviour
         ///Checking Unit's Speed
         //Order the turn correctly
         //Player is SLOWER than enemy
-        if (PlayerUnit.pokemon.Base.Speed < EnemyUnit.pokemon.Base.Speed)
+        if (PlayerUnit.Pokemon.Base.Speed < EnemyUnit.Pokemon.Base.Speed)
         {
             StartCoroutine(EnemyUseMove(true)); //Will automatically go into the next units move
         }
         //Player is FASTER than enemy
-        else if (PlayerUnit.pokemon.Base.Speed > EnemyUnit.pokemon.Base.Speed)
+        else if (PlayerUnit.Pokemon.Base.Speed > EnemyUnit.Pokemon.Base.Speed)
         {
             StartCoroutine(PlayerUseMove(true)); //Will automatically go into the next units move
         }
         //Player is TIED in speed w enemy
-        else if (PlayerUnit.pokemon.Base.Speed == EnemyUnit.pokemon.Base.Speed)
+        else if (PlayerUnit.Pokemon.Base.Speed == EnemyUnit.Pokemon.Base.Speed)
         {
             //Player will go first bc why not
             StartCoroutine(PlayerUseMove(true)); //Will automatically go into the next units move
@@ -171,22 +178,22 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator PlayerUseMove(bool didGoFirst)
     {
-        var Move = PlayerUnit.pokemon.currentMoves[CurrentMove];
+        var Move = PlayerUnit.Pokemon.currentMoves[CurrentMove];
 
-        yield return DialogOptions.TypeDialog($"{PlayerUnit.pokemon.Base.Name} used {Move.Base.Name}!");
+        yield return DialogOptions.TypeDialog($"{PlayerUnit.Pokemon.Base.Name} used {Move.Base.Name}!");
 
         yield return new WaitForSeconds(1f);
 
-        bool isFainted = EnemyUnit.pokemon.TakeDamage(Move, PlayerUnit.pokemon);
+        bool isFainted = EnemyUnit.Pokemon.TakeDamage(Move, PlayerUnit.Pokemon);
         if (Move.Base.Damage > 0)
         {
             EnemyHUD.UpdateHP();
         }
-        Debug.Log("Enemy Hp is " + EnemyUnit.pokemon.CurrentHP);
+        Debug.Log("Enemy Hp is " + EnemyUnit.Pokemon.CurrentHP);
 
         if (isFainted)
         {
-            yield return DialogOptions.TypeDialog($"{EnemyUnit.pokemon.Base.Name} Fainted!");
+            yield return DialogOptions.TypeDialog($"{EnemyUnit.Pokemon.Base.Name} Fainted!");
             PlayerWin();
         }
         if (didGoFirst)
@@ -202,21 +209,21 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator EnemyUseMove(bool DidGoFirst)
     {
-        var Move = EnemyUnit.pokemon.GetRandomMove();
+        var Move = EnemyUnit.Pokemon.GetRandomMove();
 
-        yield return DialogOptions.TypeDialog($"{EnemyUnit.pokemon.Base.Name} used {Move.Base.Name}!");
+        yield return DialogOptions.TypeDialog($"{EnemyUnit.Pokemon.Base.Name} used {Move.Base.Name}!");
 
         yield return new WaitForSeconds(1f);
 
-        bool isFainted = PlayerUnit.pokemon.TakeDamage(Move, EnemyUnit.pokemon);
-        Debug.Log("Player Hp is " + PlayerUnit.pokemon.CurrentHP);
+        bool isFainted = PlayerUnit.Pokemon.TakeDamage(Move, EnemyUnit.Pokemon);
+        Debug.Log("Player Hp is " + PlayerUnit.Pokemon.CurrentHP);
         if (Move.Base.Damage > 0)
         {
             PlayerHUD.UpdateHP();
         }
         if (isFainted)
         {
-            yield return DialogOptions.TypeDialog($"{PlayerUnit.pokemon.Base.Name} Fainted!");
+            yield return DialogOptions.TypeDialog($"{PlayerUnit.Pokemon.Base.Name} Fainted!");
             PlayerLose();
 
         }
@@ -234,20 +241,20 @@ public class BattleSystem : MonoBehaviour
     public void PlayerWin()
     {
         Debug.Log("Player wins");
-        if (PlayerUnit.pokemon.currentMoves.Count < 3)
+        if (PlayerUnit.Pokemon.currentMoves.Count < 3)
         {
             
-            PlayerUnit.pokemon.Base.moves.Add(EnemyUnit.pokemon.GetRandomMove().Base);
+            PlayerUnit.Pokemon.Base.moves.Add(EnemyUnit.Pokemon.GetRandomMove().Base);
 
-            Debug.Log("Player Added the move: " + EnemyUnit.pokemon.GetRandomMove().Base.Name);
+            Debug.Log("Player Added the move: " + EnemyUnit.Pokemon.GetRandomMove().Base.Name);
         }
-        else if (PlayerUnit.pokemon.currentMoves.Count == 3)
+        else if (PlayerUnit.Pokemon.currentMoves.Count == 3)
         {
-            int rand = Random.Range(0, PlayerUnit.pokemon.Base.moves.Count);
-            Debug.Log("Player removed the move: " + PlayerUnit.pokemon.Base.moves[rand].Name);
-            PlayerUnit.pokemon.Base.moves.RemoveAt(rand);
-            PlayerUnit.pokemon.Base.moves.Add(EnemyUnit.pokemon.GetRandomMove().Base);
-            Debug.Log("Player Added the move: " + EnemyUnit.pokemon.GetRandomMove().Base.Name);
+            int rand = Random.Range(0, PlayerUnit.Pokemon.Base.moves.Count);
+            Debug.Log("Player removed the move: " + PlayerUnit.Pokemon.Base.moves[rand].Name);
+            PlayerUnit.Pokemon.Base.moves.RemoveAt(rand);
+            PlayerUnit.Pokemon.Base.moves.Add(EnemyUnit.Pokemon.GetRandomMove().Base);
+            Debug.Log("Player Added the move: " + EnemyUnit.Pokemon.GetRandomMove().Base.Name);
 
         }
 
