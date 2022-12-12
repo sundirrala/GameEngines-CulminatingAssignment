@@ -188,10 +188,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigBod: {fileID: 9076041226544294787}
+<<<<<<< HEAD
   GrassLayer:
     serializedVersion: 2
     m_Bits: 128
   EncounterChance: 20
+=======
+>>>>>>> parent of e8d20663 (Merge branch 'main' of https://github.com/sundirrala/GameEngines-CulminatingAssignment)
   MoveSpeed: 10
   animator: {fileID: 3629980867587248260}
 --- !u!95 &3629980867587248260

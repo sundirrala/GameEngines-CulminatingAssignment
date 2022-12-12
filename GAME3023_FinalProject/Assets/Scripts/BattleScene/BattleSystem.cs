@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.SceneManagement;
 
 public class BattleSystem : MonoBehaviour
 {
@@ -19,6 +18,7 @@ public class BattleSystem : MonoBehaviour
     [SerializeField]
     DialogOptions DialogOptions;
 
+<<<<<<< HEAD
 
     //[SerializeField]
     //PokemonSO testbase;
@@ -26,6 +26,8 @@ public class BattleSystem : MonoBehaviour
     //int leveltest;
     Pokemon Player, Enemy;
 
+=======
+>>>>>>> parent of e8d20663 (Merge branch 'main' of https://github.com/sundirrala/GameEngines-CulminatingAssignment)
     Moves PlayerMove, EnemyMove;
     bool PlayerMadeChoice = false;
     int TurnOrder;
@@ -62,6 +64,7 @@ public class BattleSystem : MonoBehaviour
         
     }
 
+<<<<<<< HEAD
     public void SetupUnits(Pokemon player, Pokemon enemy)
     {
         Player = player;
@@ -71,6 +74,9 @@ public class BattleSystem : MonoBehaviour
     }
 
     public IEnumerator SetupBattle()
+=======
+    public void SetupUI()
+>>>>>>> parent of e8d20663 (Merge branch 'main' of https://github.com/sundirrala/GameEngines-CulminatingAssignment)
     {
         
         PlayerUnit.Setup(Player);
@@ -184,6 +190,7 @@ public class BattleSystem : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
 
+<<<<<<< HEAD
         bool isFainted = EnemyUnit.Pokemon.TakeDamage(Move, PlayerUnit.Pokemon);
         if (Move.Base.Damage > 0)
         {
@@ -195,6 +202,15 @@ public class BattleSystem : MonoBehaviour
         {
             yield return DialogOptions.TypeDialog($"{EnemyUnit.Pokemon.Base.Name} Fainted!");
             PlayerWin();
+=======
+        bool isFainted = EnemyUnit.pokemon.TakeDamage(Move, PlayerUnit.pokemon);
+        EnemyHUD.UpdateHP();
+        Debug.Log("Enemy Hp is " + EnemyUnit.pokemon.CurrentHP);
+
+        if (isFainted)
+        {
+            yield return DialogOptions.TypeDialog($"{EnemyUnit.pokemon.Base.Name} Fainted!");
+>>>>>>> parent of e8d20663 (Merge branch 'main' of https://github.com/sundirrala/GameEngines-CulminatingAssignment)
         }
         if (didGoFirst)
         {
@@ -215,6 +231,7 @@ public class BattleSystem : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
 
+<<<<<<< HEAD
         bool isFainted = PlayerUnit.Pokemon.TakeDamage(Move, EnemyUnit.Pokemon);
         Debug.Log("Player Hp is " + PlayerUnit.Pokemon.CurrentHP);
         if (Move.Base.Damage > 0)
@@ -225,6 +242,15 @@ public class BattleSystem : MonoBehaviour
         {
             yield return DialogOptions.TypeDialog($"{PlayerUnit.Pokemon.Base.Name} Fainted!");
             PlayerLose();
+=======
+        bool isFainted = PlayerUnit.pokemon.TakeDamage(Move, EnemyUnit.pokemon);
+        Debug.Log("Player Hp is " + PlayerUnit.pokemon.CurrentHP);
+        PlayerHUD.UpdateHP();
+
+        if (isFainted)
+        {
+            yield return DialogOptions.TypeDialog($"{PlayerUnit.pokemon.Base.Name} Fainted!");
+>>>>>>> parent of e8d20663 (Merge branch 'main' of https://github.com/sundirrala/GameEngines-CulminatingAssignment)
 
         }
         if (DidGoFirst)
@@ -237,6 +263,7 @@ public class BattleSystem : MonoBehaviour
             DialogOptions.SetOptions(true);
         }
     }
+<<<<<<< HEAD
 
     public void PlayerWin()
     {
@@ -269,9 +296,9 @@ public class BattleSystem : MonoBehaviour
         SceneManager.LoadScene("FinalWorldMap", LoadSceneMode.Single);
     }
 
+=======
+>>>>>>> parent of e8d20663 (Merge branch 'main' of https://github.com/sundirrala/GameEngines-CulminatingAssignment)
 }
-
-
 
 
 //TODO

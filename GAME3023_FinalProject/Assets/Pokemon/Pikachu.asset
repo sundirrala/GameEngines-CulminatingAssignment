@@ -23,5 +23,5 @@ MonoBehaviour:
   speed: 90
   moves:
   - {fileID: 11400000, guid: 8e9ac58bcb4389e4a8f09171123f32c5, type: 2}
-  - {fileID: 11400000, guid: e17c11f779040a643899df5ef5aabb70, type: 2}
   - {fileID: 11400000, guid: 4699b61e042d8ea4f82944219722de11, type: 2}
+  - {fileID: 11400000, guid: e17c11f779040a643899df5ef5aabb70, type: 2}

@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     Rigidbody2D rigBod;
 
+<<<<<<< HEAD
     [SerializeField, Tooltip("The layer that the player can encounter a wild pokemon on")]
     LayerMask GrassLayer;
 
@@ -18,6 +19,8 @@ public class PlayerController : MonoBehaviour
 
     public event Action OnEncountered;
 
+=======
+>>>>>>> parent of e8d20663 (Merge branch 'main' of https://github.com/sundirrala/GameEngines-CulminatingAssignment)
     [SerializeField]
     [Range(0, 10)]
     private float MoveSpeed = 10.0f;
@@ -67,6 +70,7 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Player triggered with: " + collision.gameObject.name);
+<<<<<<< HEAD
         if (tag == "Grass")
         {
             if (UnityEngine.Random.Range(1, 101) <= EncounterChance)
@@ -74,6 +78,9 @@ public class PlayerController : MonoBehaviour
                 OnEncountered();
             }
         }
+=======
+
+>>>>>>> parent of e8d20663 (Merge branch 'main' of https://github.com/sundirrala/GameEngines-CulminatingAssignment)
     }
 
     //To see if the player will encounter an enemy on the layer the grass is on

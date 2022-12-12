@@ -8,7 +8,7 @@ public class Combatant : MonoBehaviour
     [SerializeField]
     PokemonSO pokemonBase;
     [SerializeField]
-    int Level;
+    int level;
     [SerializeField]
     bool isPlayerUnit;
     bool isFainted = false;
@@ -16,6 +16,7 @@ public class Combatant : MonoBehaviour
 
     
     public bool IsFainted { get { return isFainted; } }
+<<<<<<< HEAD
 
     public bool SetisPlayerUnit(bool playerunit) 
     { 
@@ -30,6 +31,13 @@ public class Combatant : MonoBehaviour
     public void Setup(Pokemon pokemon)
     {
         pokemon = Pokemon;
+=======
+    public Pokemon pokemon { get; set; }
+
+    public void Setup()
+    {
+        pokemon = new Pokemon(pokemonBase, level);
+>>>>>>> parent of e8d20663 (Merge branch 'main' of https://github.com/sundirrala/GameEngines-CulminatingAssignment)
         if (isPlayerUnit)
         {
             GetComponent<Image>().sprite = pokemon.Base.BackSide;
