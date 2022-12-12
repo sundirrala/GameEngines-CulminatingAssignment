@@ -16,6 +16,7 @@ public class PlayerSpawn : MonoBehaviour
     /// </summary>
     public static PlayerController Player => player;
 
+
     private void Awake()
     {
         if (player == null)

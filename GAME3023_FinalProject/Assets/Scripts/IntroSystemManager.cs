@@ -21,7 +21,7 @@ public class IntroSystemManager : MonoBehaviour
     //For New Game : To add more later
     public void NewGame()
     {
-        SceneManager.LoadScene("OverworldScene");
+        SceneManager.LoadScene("FinalWorldMap");
 
         //Clear saved data if any?
     }
